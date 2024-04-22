@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %} Index page {% endblock %}
+{% block body %}
+<div class="text-center">
+    <h1 class="display-1 text-danger">Not Found</h1>
+    <p class="lead">Oops! Short Link Not Found!</p>
+    <p>
+        It appears the short link code you used doesn't exist. Double-check the link or code you entered and ensure that it is correct.
+    </p>
+    <a href="/create" class="btn btn-primary">Create short link</a>
+</div>
+{% endblock %}

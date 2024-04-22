@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %} Index page {% endblock %}
+{% block body %}
+<h2 class="text-center mb-3">URL Shortener</h2>
+<div class="row justify-content-center">
+    <div class="col-8 mt-4 text-center">
+        <p class="text-justify">
+            Welcome to the URL shortener website! If you have a link that is too long, or you don't like the way your link looks, you are in the right place at the right time.
+            Simply head over to the 'create' page or click the button below to be taken to the create page, then all of your URL shortening dreams and wishes will come true.
+            If you don't feel like creating a new short link and instead want to browse existing short links created by others, check out the <a href='/directory'>Directory</a> 
+            tab and see what links you want to click.
+        </p>
+        <a href="/create" class="btn btn-primary">Create New Short Link</a>
+    </div>
+</div>
+{% endblock %}

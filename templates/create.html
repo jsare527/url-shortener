@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %} Create page {% endblock %}
+{% block body %}
+<h2 class="text-center mb-3">Create New URL</h2>
+<div class="row justify-content-center">
+    <div class="col-6 text-center">
+        <form method="post" action="/create">
+            <div class="form group mt-3">
+                <label for="urlInput">Enter full URL here</label>
+                <input type="text" class="form-control" id="urlInput" name="fullURL" placeholder="https://google.com">
+            </div>
+            <button class="btn btn-primary mt-3" type="submit">Create</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %} Directory page {% endblock %}
+{% block body %}
+<h2 class="text-left mb-3">Links Directory</h2>
+<div class="row">
+    <div class="col">
+        <ul>
+        {% for url in urls %}
+            <li class="mt-3"><a href={{ url_for('goto_link', shortid=url[1]) }}>{{ url_for('goto_link', shortid=url[1], _external=True) }}</a><br/><span class="badge badge-primary" style="font-size: 13px;">Loads {{url[0]}}</span></li>
+        {% endfor %}
+        </ul>
+    </div>
+</div>
+{% endblock %}
